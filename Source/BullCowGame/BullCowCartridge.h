@@ -18,7 +18,7 @@ public:
 	void EndGame(bool bGameOver);
 	void Intro();
 	void ProcessGuess(FString PlayerGuess);
-	bool IsIsoGram(FString PlayerGuess);
+	bool IsIsoGram(FString Word) const;
 
 	// Your declarations go below!
 private:

@@ -31,8 +31,8 @@ void UBullCowCartridge::SetupGame()
     Length = HiddenWord.Len();
     bGameOver = false;
 
-    const TCHAR HW[] = TEXT("kruger");
-    PrintLine(TEXT("Character 1 of the hidden word is: %c"), HW[0]);
+    // const TCHAR HW[] = TEXT("kruger");
+    // PrintLine(TEXT("Character 1 of the hidden word is: %c"), HW[0]);
 }
 
 void UBullCowCartridge::EndGame(bool bGameOver)
@@ -85,8 +85,14 @@ void UBullCowCartridge::ProcessGuess(FString PlayerGuess)
     }
 }
 
-bool UBullCowCartridge::IsIsoGram(FString PlayerGuess)
+bool UBullCowCartridge::IsIsoGram(FString Word) const
 {
-
+    for (int32 i = 0; i < Word.Len(); i++)
+    {
+        for (int32 j = 0; j < Word.Len(); j++)
+        {
+            /* code */
+        }
+        }
     return true;
 }
